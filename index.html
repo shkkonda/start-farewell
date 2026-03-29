@@ -66,7 +66,7 @@
   <div class="e2">
     5 years. <span class="hl">Data Analyst</span> → <span class="hl">Senior Data Engineer</span>.<br>
     Got <span class="hl">married</span>. Had a <span class="hl">kid</span>.<br>
-    Survived Yuval's shawarma. Dropped userLocation.<br>
+    Survived Yuval's shawarma. Dropped the biggest table.<br>
     Was a pain in the ass for Adi (you're welcome). 😏<br>
     Woke up Dani (with coffee). ☕<br>
     Skipped Assa's family lunch for wild cats in Haifa. Barely slept. Biggest misplay of 5 years. 🐱<br><br>
@@ -111,14 +111,14 @@ const MS=[
   {x:2050, yr:"2022",em:"🌯",t:"SHAWARMA K.O.",     tx:"First trip to Israel! Yuval took me for shawarma... it was so good, it almost killed me.",w:"2-1"},
   {x:2450, yr:"2022",em:"✨",t:"1-UP!",             tx:"But wait — 1-UP! Respawned just in time to watch Maccabi Haifa live. Totally worth it. ⚽",w:"2-2"},
   {x:2900, yr:"2023",em:"⬆️",t:"LEVEL UP!",         tx:"Promoted to Data Engineer! +1000 XP",w:"3-1"},
-  {x:3300, yr:"2023",em:"💀",t:"TABLE DROP!",        tx:"Dropped the LARGEST table in the company — userLocation. Manager was in miluim. What they don't know... 🫣",w:"3-2"},
+  {x:3300, yr:"2023",em:"💀",t:"TABLE DROP!",        tx:"Dropped the LARGEST table in the company. Manager was in miluim. What they don't know... 🫣",w:"3-2"},
   {x:3700, yr:"2023",em:"💍",t:"PLAYER 2!",          tx:"Got married! Found my co-op partner for life! 💕",w:"3-3"},
   {x:4100, yr:"2023",em:"📈",t:"TEAM GROWS",         tx:"India team: 2 → 4! The squad is assembling!",w:"3-4"},
   {x:4500, yr:"2024",em:"☕",t:"DANI JOINS",         tx:"Dani joins the team! Kept scheduling early coffee catchups. She's been... very polite about it. 😅",w:"4-1"},
   {x:4950, yr:"2024",em:"👶",t:"NEW CHARACTER!",     tx:"Baby joined the party! Sleep -99. Love +∞",w:"4-2"},
   {x:5400, yr:"2025",em:"🚀",t:"FINAL FORM!",       tx:"Promoted to Senior Data Engineer!",w:"5-1",powerup:true},
   {x:5900, yr:"2025",em:"🔟",t:"TEAM x10!",         tx:"India team grew to 10! Full raid party assembled!",w:"5-2"},
-  {x:6350, yr:"2026",em:"🏗️",t:"LAST QUEST",        tx:"VA to OCI Migration — my final project. Left at 80%. The next hero continues the build...",w:"5-3"},
+  {x:6350, yr:"2026",em:"🏗️",t:"LAST QUEST",        tx:"Database Migration — my final project. The next hero continues the build...",w:"5-3"},
 ];
 MS.forEach(m=>{m.hit=false;m.bounce=0;m.gateOpen=false;m.autoTriggered=false});
 
@@ -365,7 +365,7 @@ function drawFlag80(){
   Ctx.fillStyle='#ffc107';Ctx.fillRect(fx-30,H-GH-60,66,28);
   Ctx.strokeStyle='#000';Ctx.lineWidth=2;Ctx.strokeRect(fx-30,H-GH-60,66,28);
   Ctx.fillStyle='#000';Ctx.font='6px "Press Start 2P"';Ctx.textAlign='center';
-  Ctx.fillText('VA TO OCI',fx+3,H-GH-47);Ctx.fillText('80% COMPLETE',fx+3,H-GH-37);
+  Ctx.fillText('DATABASE',fx+3,H-GH-47);Ctx.fillText('MIGRATION',fx+3,H-GH-37);
   Ctx.font='18px serif';Ctx.fillText('🏗️',fx-22,H-GH-65);
   Ctx.strokeStyle='#ff8f00';Ctx.lineWidth=4;
   Ctx.beginPath();Ctx.moveTo(fx+80,H-GH);Ctx.lineTo(fx+80,H-GH-240);Ctx.stroke();
